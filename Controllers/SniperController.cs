@@ -22,6 +22,8 @@ namespace TradeApi.Controllers
             _priceService = priceService;
         }
 
+        
+
         [HttpGet]
         public string Get([FromQuery]string instrument, [FromQuery]string action)
         {

@@ -30,6 +30,8 @@ namespace TradeApi
             services.AddControllers();
 
             services.AddTransient<IPriceService, PriceService>();
+            services.AddTransient<IMessageParseService, MessageParseService>();
+            services.AddTransient<IInstrumentService, InstrumentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
